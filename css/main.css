@@ -208,6 +208,16 @@ nav.nav-active .navlines:after {
 	transform: scale(.98);
 }
 
+.sidebar .button {
+    color: rgba(185, 152, 103, 1);
+    background: black;
+    z-index: 15;
+}
+
+.sidebar a {
+  color: white;
+}
+
 /* Base Styles */
 
 /* Home Styles*/
@@ -468,8 +478,9 @@ header h1 {text-align: center; font-size: 38px}
 .work-grid figcaption {
 	font-family: 'Crimson Text' serif;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
+  line-height: 1.8;
 	letter-spacing: 10px;
 	position: absolute;
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
