@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery of Development Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/fonts.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container gallery">
+      <nav>
+        <ng-include src="'navigation-toggle.html'"></ng-include>
+      </nav>
+      <header>
+          <h1>Gallery
+            <span class="subhead">Development Projects</span></h1>
+      </header>
+
+    <input type="checkbox" id="toggle" name="" value="">
+    <section class="page-content">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 290 }'>
+      <div class="grid-item"><label for="toggle" data-id="1"><img src="imgs/design-production-services.jpg"></label></div>
+      <div class="grid-item"><label for="toggle" data-id="2"><img src="imgs/develop-adventuredome.jpg"></label></div>
+      <div class="grid-item"><label for="toggle" data-id="3"><img src="imgs/design-mlife.jpg"></label></div>
+      <div class="grid-item"><label for="toggle" data-id="4"><img src="imgs/develop-liger.jpg"></label></div>
+    </div>
+  </section>
+
+  <section class="sidebar">
+      <article class="display sidebar-active" id="1">
+        <h3>MGM Production Services</h3>
+        <p>
+          MGM Production Services is a team of talented production professionals that helps bring a wide range of events to life in some of the world’s most beautifully functional event spaces. They're a production company that has built rock solid relationships with every department at every MGM Resorts International® destination, the machine behind Vegas’ most renowned and globally revered resorts.
+        </p>
+        <p>This is a fully fuctional site with many interative componets and responsive layout. Because of the responsive layout this site can be viewed on all mobile devices and desktop applications.</p>
+      </article>
+      <article class="display" id="2">
+        <h3>Adventuredome Exclusive Group LP</h3>
+        <p>
+          Exclusive group rate for the Las Vegas National. This is a responsive landing page to market the special rate for the teams and athletes of the Las Vegas National.
+        </p>
+      </article>
+      <article class="display" id="3">
+        <h3>M life Insider Reward Campaign</h3>
+        This is a microsite partnered with an Instagram promotional offer.
+      </article>
+      <article class="display" id="4">
+        <h3>Liger Responsive CSS Framework</h3>
+        <p>This is a css framework developed with a large corporate design environment in mind. I full-heartedly believe no two web design environments are the same, and Liger will help developers build faster responsive websites especially in a large corporate or Fortune 500 company.</p>
+      </article>
+  </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+  </body>
+</html>
