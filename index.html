@@ -1,0 +1,83 @@
+<!doctype html>
+<html ng-app="portfolioApp">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/normalize.css" rel="stylesheet" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+<link href="css/main.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+<div  ng-controller="navController as navList">
+  <ng-include src="'navigation.html'"></ng-include>
+</div>
+<div class="container">
+  <nav>
+    <ng-include src="'navigation-toggle.html'"></ng-include>
+  </nav>
+	<section class="left">
+    	<img class="desktop" src="imgs/home_name_title.png"/>
+      <img class="mobile" src="imgs/name-logo.svg"/>
+    </section>
+
+      <a href="gallery-design.html"><section class="right">
+      <section class="video">
+        <article class="caption">
+          <div class="dot"></div><div class="line"></div>
+          <div class="type">Designer</div>
+        </article>
+        <video loop poster="imgs/home_design_pod.jpg">
+          <source src="video/designer.mp4" type="video/mp4">
+          <source src="video/designer.webm" type="video/webm">
+        </video>
+      </section></a>
+
+        <a href="gallery-development.html"><section class="video">
+        <article class="caption">
+          <div class="dot"></div><div class="line"></div>
+          <div class="type">Developer</div>
+        </article>
+        <video loop poster="imgs/home_develop_pod.jpg">
+          <source src="video/developer.mp4" type="video/mp4">
+            <source src="video/developer.webm" type="video/webm">
+        </video>
+      </section></a>
+
+        <a href="gallery-teach.html"><section class="video">
+        <article class="caption">
+          <div class="dot"></div><div class="line"></div>
+          <div class="type">Teacher</div>
+        </article>
+        <video loop poster="imgs/home_teach_pod.jpg">
+          <source src="video/teacher.mp4" type="video/mp4">
+            <source src="video/teacher.webm" type="video/webm">
+        </video>
+      </section></a>
+
+      <a href="gallery-think.html"><section class="video">
+        <article class="caption">
+          <div class="dot"></div><div class="line"></div>
+          <div class="type">Thinker</div>
+        </article>
+        <video loop poster="imgs/home_think_pod.jpg">
+          <source src="video/thinker.mp4" type="video/mp4">
+            <source src="video/thinker.webm" type="video/webm">
+        </video>
+      </section></a>
+
+
+
+
+    </section>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/nav.js"  type="text/javascript"></script>
+<script src="js/video.js"  type="text/javascript"></script>
+<script src="js/portfolio.js" type="text/javascript"></script>
+</body>
+</html>
