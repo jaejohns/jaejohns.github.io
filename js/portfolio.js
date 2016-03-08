@@ -4,8 +4,6 @@ angular.module('portfolioApp', [])
   navList.list = [
     {menu:"Home", nav:"index.html"},
     {menu:"Projects", nav:"projects.html"},
-    {menu:"About", nav:"about.html"},
-    {menu:"Contact", nav:"contact.html"},
   ];
 })
 
