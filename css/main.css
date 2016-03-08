@@ -378,9 +378,13 @@ nav.nav-active .navlines:after {
     align-items: flex-end;
 	}
 
-  .left img {max-width: 70%; width: 70%}
+  .left img {max-width: 70%; width: 70%; max-height: 50px;}
 
   .home-contact {margin-top: 0;}
+
+  .home-contact a {
+    width: 40px;
+}
 
   .home-contact img {
     width: auto;
