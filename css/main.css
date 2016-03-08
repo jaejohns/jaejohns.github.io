@@ -448,8 +448,10 @@ nav.nav-active .navlines:after {
 }
 
 .sidebar img {
-    width: 100%;
+    width: auto;
     max-width: 400px;
+    max-height: 500px;
+    height: auto;
 }
 
 .display {
@@ -686,4 +688,6 @@ header aside {
 	.case-study-grid figure img {
 		margin-bottom: 20px;
 	}
+
+  .case-study .button {display: block; max-width: 280px;  }
 }
