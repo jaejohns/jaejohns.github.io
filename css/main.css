@@ -41,7 +41,7 @@ li {
     position: relative;
 }
 
-.work, .gallery, .case-study {
+.work, .gallery, .case-study, .projects {
 	-webkit-flex-direction: column; /* Safari 6.1+ */
 	flex-direction: column;
 }
@@ -248,12 +248,36 @@ nav.nav-active .navlines:after {
   width: 100%;
 }
 
+.home-intro {
+    color: black;
+    text-transform: none;
+    font-weight: 100;
+    line-height: 1;
+    margin-left: 20px;
+    font-size: 220%;
+}
+
+.lead {
+    color: #b99867;
+    margin-left: -20px;
+}
+
+.profession {
+    color: black;
+    font-weight: 100;
+    line-height: 1;
+    margin-left: 29px;
+    font-size: 90%;
+    text-align: center;
+    line-height: 1.5;
+}
+
 .home-contact {
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     -webkit-align-items: center;
     -ms-flex-align: center;
     -ms-align-items: center;
@@ -362,7 +386,27 @@ nav.nav-active .navlines:after {
     letter-spacing: 7px;
 }
 
+@media (max-width: 768px) {
+.home-intro {
+    font-size: 250%;
+    text-align: center;
+    margin: 0;
+  }
+  .lead {display: none;}
+
+  .profession {
+    margin-top: 20px;
+    font-size: 90%;
+}
+
+}
+
+
+
 @media (max-width: 600px) {
+
+  nav {position: absolute;}
+
   .desktop {
     display: none;
   }
@@ -382,8 +426,12 @@ nav.nav-active .navlines:after {
 
   .home-contact {margin-top: 0;}
 
+  .profession {
+    display: none;
+}
+
   .home-contact a {
-    width: 40px;
+    width: 47px;
 }
 
   .home-contact img {
@@ -397,6 +445,19 @@ nav.nav-active .navlines:after {
 		top: 18vh;
 	}
 
+}
+
+@media (max-width:480px) {
+  .home-intro {font-size: 190%}
+}
+
+@media (max-width:360px) {
+  .home-intro {
+    font-size: 180%;
+    text-align: right;
+    margin-top: -3px;
+    margin-bottom: 7px;
+  }
 }
 /* Home Styles*/
 
@@ -660,7 +721,7 @@ header aside {
 	width: 100%;
 }
 
-.case-study-grid .onroll {
+.case-study-grid .onroll, .project-grid .onroll {
 	transition: .3s all ease-in-out;
 	opacity: 0;
 }
@@ -690,4 +751,43 @@ header aside {
 	}
 
   .case-study .button {display: block; max-width: 280px;  }
+}
+
+
+@media (max-width: 600px) {
+  header {margin-top: 50px;}
+}
+
+/* Projects CSS */
+
+.project-grid {	width: 100%;
+	margin: 0 auto;}
+
+.project-descrition {
+  padding: 3% 10%;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+  text-align: right;
+  margin-left: 40%;
+}
+
+.project-header, .project-display {
+    padding: 2% 10% 5%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.project-header { text-align: center;}
+
+.project-display {
+  text-align: left;
+}
+
+.project-header img {max-width: 100%;}
+
+.project-display img {
+    max-width: 100%;
+    margin: 10px;
 }
