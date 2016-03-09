@@ -16,7 +16,6 @@ if(wScroll > $onroll.offset().top - ($window.height() / 1.2)){
 		var opacity = (-wScroll * -1) - 359 ;
 
 		$onroll.css({'opacity': opacity});
-    console.log(wScroll);
 
 		}
 		//end of about scroll
@@ -27,7 +26,6 @@ if(wScroll > $onroll2.offset().top - ($window.height() / 0.6)){
 		var opacity = (-wScroll * -1) - 559 ;
 
 		$onroll2.css({'opacity': opacity});
-		console.log(wScroll);
 
 		}
 		//end of about scroll
