@@ -12,7 +12,7 @@ angular.module('portfolioApp', [])
   portList.list = [
     {gallery: "gallery-design.html", thumbnail:"hub-design", figcaption:"Gallery of Design Projects"},
     {gallery: "gallery-development.html", thumbnail:"hub-develop", figcaption:"Gallery of Development Projects"},
-    {gallery: "gallery-teach.html", thumbnail:"hub-teach", figcaption:"Gallery of Teaching Projects"},
+    {gallery: "gallery-case-studies.html", thumbnail:"hub-teach", figcaption:"Gallery of Teaching Projects"},
     {gallery: "gallery-think.html", thumbnail:"hub-think", figcaption:"Gallery of Projects for Fun"},
   ];
 })
