@@ -46,6 +46,8 @@ li {
 	flex-direction: column;
 }
 
+#home nav {position: fixed;}
+
 nav {
     height: 35px;
     position: absolute;;
@@ -456,7 +458,7 @@ nav.nav-active .navlines:after {
 
 @media (max-width:360px) {
   .home-intro {
-    font-size: 180%;
+    font-size: 85%;
     text-align: right;
     margin-top: -3px;
     margin-bottom: 7px;
