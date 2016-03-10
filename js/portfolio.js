@@ -4,6 +4,7 @@ angular.module('portfolioApp', [])
   navList.list = [
     {menu:"Home", nav:"index.html"},
     {menu:"Projects", nav:"projects.html"},
+    {menu:"Case Studies", nav:"case-studies.html"},
   ];
 })
 
@@ -14,6 +15,14 @@ angular.module('portfolioApp', [])
     {gallery: "gallery-development.html", thumbnail:"hub-develop", figcaption:"Gallery of Development Projects"},
     {gallery: "gallery-case-studies.html", thumbnail:"hub-teach", figcaption:"Gallery of Teaching Projects"},
     {gallery: "gallery-think.html", thumbnail:"hub-think", figcaption:"Gallery of Projects for Fun"},
+  ];
+})
+
+.controller('caseController', function () {
+  var caseList = this;
+  caseList.list = [
+    {study: "case-study-mgm-production-services.html", thumbnail:"hub-case-study-mgm", figcaption:"MGM Production Services"},
+    {study: "case-study-adventuredome.html", thumbnail:"hub-case-study-adventuredome", figcaption:"Adventuredome"},
   ];
 })
 
