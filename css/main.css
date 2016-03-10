@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: rgba(231, 231, 231, 0.8) none repeat scroll 0 ;
 }
-a {transition: .2s all ease-in-out; text-decoration: none; color: black; opacity: .8}
+a {transition: .2s all ease-in-out; text-decoration: none; color: black; opacity: .9}
 
 a:hover {opacity: 1}
 
@@ -48,7 +48,7 @@ li {
 
 nav {
     height: 35px;
-    position: fixed;
+    position: absolute;;
     z-index: 10;
     width: 30px;
     top: 30px;
@@ -136,22 +136,25 @@ nav.nav-active .navlines:after {
   -webkit-justify-content: center;
  -ms-flex-pack: center;
   justify-content: center;
-  height: 0;
-  visibility: hidden;
   transition: .3s all ease-in-out;
   opacity: 0;
-  -webkit-transform: translateX(-200%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translateX(-200%); /* IE 9 */
-  transform: translateX(-200%);
+  -webkit-transform: translateY(-200%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateY(-200%); /* IE 9 */
+  transform: translateY(-200%);
+  -webkit-transform: rotateX(90deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotateX(90deg); /* IE 9 */
+  transform: rotateX(90deg);
+  transform-origin: bottom;
 }
 
 .menu-toggle {
-  height: 100%;
-  visibility: visible;
   opacity: 1;
-  -webkit-transform: translateX(0%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translateX(0%); /* IE 9 */
-  transform: translateX(0%);
+  -webkit-transform: translateY(0%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateY(0%); /* IE 9 */
+  transform: translateY(0%);
+  -webkit-transform: rotateX(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotateX(0deg); /* IE 9 */
+  transform: rotateX(0deg);
 }
 
 .menu-overlay .nav {
@@ -405,8 +408,6 @@ nav.nav-active .navlines:after {
 
 @media (max-width: 600px) {
 
-  nav {position: absolute;}
-
   .desktop {
     display: none;
   }
@@ -449,6 +450,8 @@ nav.nav-active .navlines:after {
 
 @media (max-width:480px) {
   .home-intro {font-size: 190%}
+
+  .menu-overlay li {font-size: 28px}
 }
 
 @media (max-width:360px) {
@@ -590,7 +593,7 @@ header h1 {text-align: center; font-size: 38px}
 }
 
 .work-grid figcaption {
-	font-family: 'Crimson Text' serif;
+	font-family: 'Crimson Text', serif;
 	text-transform: uppercase;
 	font-size: 16px;
 	text-align: center;
@@ -609,7 +612,7 @@ header h1 {text-align: center; font-size: 38px}
   -ms-align-items: center;
 	align-items: center;
 	z-index: 5;
-	background: rgba(185, 152, 103, 0.85);
+	background: rgba(185, 152, 103, 0.95);
 	bottom: 0;
 	left: 0;
 	opacity: 0;
@@ -766,11 +769,9 @@ header aside {
 .project-descrition {
   padding: 3% 10%;
   box-sizing: border-box;
-  font-size: 16px;
-  text-align: center;
-  width: 60%;
+  font-size: 16px;;
   text-align: right;
-  margin-left: 40%;
+  line-height: 1.7;
 }
 
 .project-header, .project-display {
@@ -782,7 +783,7 @@ header aside {
 .project-header { text-align: center;}
 
 .project-display {
-  text-align: left;
+  text-align: center;
 }
 
 .project-header img {max-width: 100%;}
@@ -794,8 +795,5 @@ header aside {
 
 @media (max-width: 480px) {
   .project-descrition {
-    padding: 0%;
-    width: 100%;
-    text-align: center;
-    margin-left: 0px;
+
   }
