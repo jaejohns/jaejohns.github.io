@@ -1,89 +1,105 @@
 <!doctype html>
 <html ng-app="portfolioApp">
+
 <head>
-  <meta name="keywords" content="Jerald Johnson, Front-End Developer, Website Designer, Las Vegas Website Designer">
-  <meta name="description" content="Las Vegas website designer">
-<title>Jerald Johnson: Front-End Web Developer, Designer, Teacher, Thinker.</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/normalize.css" rel="stylesheet" media="screen" />
-<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
-<link href="css/main.css" rel="stylesheet" media="screen" />
+    <meta name="keywords" content="Jerald Johnson, Front-End Developer, Website Designer, Las Vegas Website Designer">
+    <meta name="description" content="Las Vegas website designer">
+    <title>Jerald Johnson: Front-End Web Developer, Designer, Teacher, Thinker.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" media="screen" />
 </head>
 
 <body id="home">
-<div  ng-controller="navController as navList">
-  <ng-include src="'navigation.html'"></ng-include>
-</div>
-<div class="container">
-  <nav>
-    <ng-include src="'navigation-toggle.html'"></ng-include>
-  </nav>
-	<section class="left">
-    	<h1 class="home-intro"><div class="lead">Hi there. I'm	</div>
+    <div ng-controller="navController as navList">
+        <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <div class="container">
+        <nav>
+            <ng-include src="'navigation-toggle.html'"></ng-include>
+        </nav>
+        <section class="left">
+            <h1 class="home-intro"><div class="lead">Hi there. I'm	</div>
         jerald j. johnson</h1>
-      <h2 class="profession">Designer. Developer</h2>
-      <div class="home-contact">
-        <a href="mailto:jerald.j.johnson@gmail.com?Subject=Hello" target="_top"><img src="imgs/email.svg" alt="" /></a>
-          <a href="https://www.instagram.com/p/4bB8YnKv6l/?taken-by=jeraldjohnsonart" target="_blank"><img src="imgs/instagram.svg" alt="" /></a>
-      </div>
-    </section>
+            <h2 class="profession">Designer. Developer</h2>
+            <div class="home-contact">
+                <a href="mailto:jerald.j.johnson@gmail.com?Subject=Hello" target="_top"><img src="imgs/email.svg" alt="" />
+                </a>
+                <a href="https://www.instagram.com/p/4bB8YnKv6l/?taken-by=jeraldjohnsonart" target="_blank"><img src="imgs/instagram.svg" alt="" />
+                </a>
+            </div>
+        </section>
 
-      <a href="gallery-design.html"><section class="right">
-      <section class="video">
-        <article class="caption">
-          <div class="dot"></div><div class="line"></div>
-          <div class="type">Designer</div>
-        </article>
-        <video loop poster="imgs/home_design_pod.jpg">
-          <source src="video/designer.mp4" type="video/mp4">
-          <source src="video/designer.webm" type="video/webm">
-        </video>
-      </section></a>
+        <a href="gallery-design.html">
+            <section class="right">
+                <section class="video">
+                    <article class="caption">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="type">Designer</div>
+                    </article>
+                    <video loop poster="imgs/home_design_pod.jpg">
+                        <source src="video/designer.mp4" type="video/mp4">
+                            <source src="video/designer.webm" type="video/webm">
+                    </video>
+                </section>
+        </a>
 
-        <a href="gallery-development.html"><section class="video">
-        <article class="caption">
-          <div class="dot"></div><div class="line"></div>
-          <div class="type">Developer</div>
-        </article>
-        <video loop poster="imgs/home_develop_pod.jpg">
-          <source src="video/developer.mp4" type="video/mp4">
-            <source src="video/developer.webm" type="video/webm">
-        </video>
-      </section></a>
+        <a href="gallery-development.html">
+            <section class="video">
+                <article class="caption">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                    <div class="type">Developer</div>
+                </article>
+                <video loop poster="imgs/home_develop_pod.jpg">
+                    <source src="video/developer.mp4" type="video/mp4">
+                        <source src="video/developer.webm" type="video/webm">
+                </video>
+            </section>
+        </a>
 
-        <a href="case-studies.html"><section class="video">
-        <article class="caption">
-          <div class="dot"></div><div class="line"></div>
-          <div class="type">Creator</div>
-        </article>
-        <video loop poster="imgs/home_teach_pod.jpg">
-          <source src="video/teacher.mp4" type="video/mp4">
-            <source src="video/teacher.webm" type="video/webm">
-        </video>
-      </section></a>
+        <a href="case-studies.html">
+            <section class="video">
+                <article class="caption">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                    <div class="type">Creator</div>
+                </article>
+                <video loop poster="imgs/home_teach_pod.jpg">
+                    <source src="video/teacher.mp4" type="video/mp4">
+                        <source src="video/teacher.webm" type="video/webm">
+                </video>
+            </section>
+        </a>
 
-      <a href="gallery-think.html"><section class="video">
-        <article class="caption">
-          <div class="dot"></div><div class="line"></div>
-          <div class="type">Thinker</div>
-        </article>
-        <video loop poster="imgs/home_think_pod.jpg">
-          <source src="video/thinker.mp4" type="video/mp4">
-            <source src="video/thinker.webm" type="video/webm">
-        </video>
-      </section></a>
+        <a href="gallery-think.html">
+            <section class="video">
+                <article class="caption">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                    <div class="type">Thinker</div>
+                </article>
+                <video loop poster="imgs/home_think_pod.jpg">
+                    <source src="video/thinker.mp4" type="video/mp4">
+                        <source src="video/thinker.webm" type="video/webm">
+                </video>
+            </section>
+        </a>
 
 
 
 
-    </section>
+        </section>
 
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/nav.js"  type="text/javascript"></script>
-<script src="js/video.js"  type="text/javascript"></script>
-<script src="js/portfolio.js" type="text/javascript"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/nav.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
+    <script src="js/portfolio.js" type="text/javascript"></script>
 </body>
+
 </html>
