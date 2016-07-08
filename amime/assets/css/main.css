@@ -232,7 +232,7 @@ ul > li:before {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -300,34 +300,54 @@ a {
 }
 
 .viewport {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slide {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   transition: all 0.5s cubic-bezier(0.67, -0.15, 0, 1.82);
-  transform: rotate(90deg) translate(200%);
-  transform-origin: center;
+  -webkit-transform: rotate(90deg) translate(200%);
+      -ms-transform: rotate(90deg) translate(200%);
+          transform: rotate(90deg) translate(200%);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
   opacity: 0;
   padding: 20px;
 }
 
 .slide.active {
-  transform: rotate(0) translate(0);
+  -webkit-transform: rotate(0) translate(0);
+      -ms-transform: rotate(0) translate(0);
+          transform: rotate(0) translate(0);
   opacity: 1;
 }
 
 #home {
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #list {
@@ -341,5 +361,9 @@ a {
 }
 
 #list .viewport {
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
+/*# sourceMappingURL=main.css.map */
