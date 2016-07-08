@@ -227,7 +227,7 @@ ul > li {
 }
 
 ul > li:before {
-  content: "-";
+  content: "- ";
   text-indent: -5px;
 }
 
