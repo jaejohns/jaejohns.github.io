@@ -120,7 +120,7 @@ nav.nav-active .navlines:after {
 }
 
 .menu-overlay {
-  position: absolute;
+  position: fixed;
   background: rgba(185, 152, 103, .85);
   top: 0;
   left: 0;
