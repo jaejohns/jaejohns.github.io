@@ -140,9 +140,9 @@ nav.nav-active .navlines:after {
   justify-content: center;
   transition: .3s all ease-in-out;
   opacity: 0;
-  -webkit-transform: translateY(-200%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translateY(-200%); /* IE 9 */
-  transform: translateY(-200%);
+  -webkit-transform: translateY(200%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateY(200%); /* IE 9 */
+  transform: translateY(200%);
   -webkit-transform: rotateX(90deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
       -ms-transform: rotateX(90deg); /* IE 9 */
   transform: rotateX(90deg);
