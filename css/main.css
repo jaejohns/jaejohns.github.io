@@ -802,10 +802,10 @@ header aside {
 
   }
 
-  #emf-container-outer {
-    background: rgba(231, 231, 231, 0.8) none repeat scroll 0  !important;
-  }
+#emf-container-outer {
+  background: rgba(231, 231, 231, 0.8) none repeat scroll 0  !important;
+}
 
-  #emf-logo {
-    display: none !important;
+iframe #emf-logo {
+  display: none !important;
 }
